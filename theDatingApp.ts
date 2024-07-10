@@ -1,6 +1,6 @@
 Here's a comprehensive TypeScript application showcasing composition, inheritance, method calls between objects, and data interchange via parameters and returned objects, themed around a dating app. This example will demonstrate various TypeScript features and object-oriented programming concepts.
 First, let's create a file structure for our project:
-Copydating-app/
+dating-app/
 ├── src/
 │   ├── models/
 │   │   ├── User.ts

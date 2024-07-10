@@ -15,13 +15,13 @@ dating-app/
 
 ### In the root, run:
 npm -init
-tsc -init
+tsc --init
 
 Now, let's implement each file:
 
 src/models/User.ts:
 
-typescriptCopyexport class User {
+export class User {
   constructor(
     public id: number,
     public name: string,
@@ -36,7 +36,7 @@ typescriptCopyexport class User {
 
 src/models/Profile.ts:
 
-typescriptCopyimport { User } from './User';
+import { User } from './User';
 
 export class Profile {
   private interests: string[] = [];
@@ -82,7 +82,7 @@ export class Message {
 
 src/models/MatchMaker.ts:
 
-typescriptCopyimport { Profile } from './Profile';
+import { Profile } from './Profile';
 
 export class MatchMaker {
   static findMatches(profile: Profile, potentialMatches: Profile[], minScore: number): Profile[] {
@@ -140,7 +140,7 @@ export class DatingService {
 
 src/index.ts:
 
-typescriptCopyimport { DatingService } from './services/DatingService';
+import { DatingService } from './services/DatingService';
 
 // Create an instance of the DatingService
 const datingService = new DatingService();
@@ -218,6 +218,7 @@ jsonCopy{
     "typescript": "^4.5.4"
   }
 }
+
 To run the application:
 
 Install dependencies: npm install

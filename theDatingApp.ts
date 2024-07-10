@@ -12,6 +12,11 @@ dating-app/
 │   └── index.ts
 ├── tsconfig.json
 └── package.json
+
+### In the root, run:
+npm -init
+tsc -init
+
 Now, let's implement each file:
 
 src/models/User.ts:
